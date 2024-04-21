@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 
-const loadble = (importFunc, { fallback = null } = { fallback: null }) => {
+const loadable = (importFunc, { fallback = null } = { fallback: null }) => {
   const LazyCompomponent = lazy(importFunc);
 
   return (props) => (
@@ -10,4 +10,4 @@ const loadble = (importFunc, { fallback = null } = { fallback: null }) => {
   );
 };
 
-export default loadble;
+export default loadable;
